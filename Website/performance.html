@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Performance</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<pre class="header">
+ _______ ______ _______      ______                     __   
+|    ___|   __ \     __|    |   __ \.-----.-----.-----.|  |_ 
+|    ___|    __/__     |    |   __ <|  _  |  _  |__ --||   _|
+|___|   |___|  |_______|    |______/|_____|_____|_____||____|
+                                                             
+	</pre>
+
+	<div class="navbar">
+		<ul>
+			<li class="navbarlist"><a href="index.html">home</a></li>
+		</ul>
+	</div>
+
+	<h1>Step One</h1>
+
+	<p>Make a restore point of your Windows installation just incase anything happens to go wrong. A tutorial on how to make a restore point in Windows 10 can be found <a href="https://www.youtube.com/watch?v=vKH0QeV0coM" target="_blank">here</a>.</p>
+
+	<h1>Step Two</h1>
+
+	<p>Install <a href="https://www.ccleaner.com/" target="_blank">CCleaner</a> and do a complete clean of your system. This might take a while depeneding on how much junk you have on your system.</p>
+
+	<h1>Step Three</h1>
+
+	<p>Next, we're going to update all of our drivers. This can be done by installing a program called <a href="https://www.iobit.com/en/driver-booster.php" target="_blank">Driver Booster</a>. Make sure to do a custom install of this application and uncheck any added on programs. Once installed let the program scan your system for drivers that need to be updated. This can cause dramatic performance increase. I could count on one hand how many times I've helped people and out of date drivers being the solution to those issues. Feel free to uninstall the program after you're finished with updating your drivers. The program can be annoying with how many popups it has.</p>
+
+	<h1>Step Four [NVidia Only]</h1>
+
+	<p><a href="https://www.techpowerup.com/download/techpowerup-nvcleanstall/" target="_blank">NVCleanStall</a> is a utility we're going to be using to replace the NVidia driver we just installed. This is mainly useful for lower end systems because this removes any uneeded components from the NVidia driver installation. Once the program is installed, launch it and wait for it to find the correct drivers for your GPU then click next. Let it install these driver and make sure to set the installation settings to minimal when prompted. Leave the check boxes defaulted when you're prompted and just continue. Click the install button and install the NVidia driver as you would normally do. This gives you a very clean NVidia driver installation.</p>
+
+	<h1>Step Five [NVidia Only]</h1>
+
+	<p>We're going to be optimizing the NVidia control panel for gaming now. Right click on your desktop on go into your NVidia Control Panel. Under the "Adjust image settings with preview" tab check "Use my preference emphasizing" then drag the slider to performance. Apply the settings then check the "Use the advanced 3D image settings" and apply again. Now click on the "Take me there" button. This is where we start to get into the nitty gritty. Copy all of the settings on the screenshots <a href="https://gyazo.com/e2f9a6de7e6feab4f427f3d20adce6c0" target="_blank">Image 1</a> <a href="https://gyazo.com/5baedfcce851409eca6247a6c6914ef5" target="_blank">Image 2</a> <a href="https://gyazo.com/f266d9afdec17deeb3c6b4481cf7b214" target="_blank">Image 3</a>. Once you've copied all of these, you can move on to the next step.</p>
+
+	<h1>Step Six</h1>
+
+	<p>Make sure you have XMP enable on your RAM. You can check how to enable XMP RAM on most motherboards <a href="https://www.youtube.com/watch?v=NZnAb0vhcYc" target="_blank">here</a>. XMP stands for "Extreme Memory Profile". This sets your RAM's overclock much higher than it normally would be at. This makes games far smoother. Top framerates wont be much different, but your 1% lows should be a lot better than with it disabled.</p>
+
+	<h1>Step Seven</h1>
+
+	<p>We're going to be debloat our install of Windows 10. Defaultly, Windows 10 comes with a lot of garbage on the computer. It's by far the most bloated operating system. To remedy this, we're going to be using a script developed by <a href="https://github.com/Sycnex" target="_blank">Sycnex</a>. You can download the script <a href="https://github.com/Sycnex/Windows10Debloater" target="_blank">here</a>. Once installed extract this ZIP file and copy the location. Open a PowerShell window as administrator and type in the following "Set-ExecutionPolicy Unrestricted" and press Y when promted. Now cd into the folder where you extracted the debloater. This should look something like this "cd C:\Users\USERNAME\Downloads\Windows10Debloater-master". Once you've cd'd into the folder type the following "./Windows10DebloaterGUI" to launch the script. Once it launches click the debloat button and let the script run. Close out of the program once a little window pops up saying its completed.</p>
+
+	<h1>Step Eight</h1>
+
+	<p>Now we're going to be disabling startup applications. Go to the search bar and type in "Task Manager" and hit enter. Once its opened click more details at the bottom so we can see the full task manager. Head over to the startup tab and disable anything you dont use. These applications startup when you bootup windows. This serverely slows down the operating systems boot times. Doing this will shave minutes if you have an older hard drive with lots of startup applications.</p>
+
+	<h1>Step Nine</h1>
+
+	<p>We're going to be enabling a "Ultimate Performance" power plan in windows through the command line. Go back down to the search bar and type in CMD and run it as an administrator and type in the following "powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61". Once you've done this close out of the CMD menu and search in the search bar "Edit Power Plan". This will load up a menu called "Edit Plan Settings". At the top of the window click on "Power Options". Click "Show Additional Plans" to reveal our Ultimate Power Plan. Check the Ultimate Power Plan and move onto the last and final step.</p>
+
+	<h1>Step Ten</h1>
+
+	<p>Finally, we're going to be optimizing our drives. Launch a "file explorer" menu and navigate to "This PC". Right-click on your Local Disk C and click properties. A small window should pop up. Go over to the tools tab in the small window. Click on the "Optimize" button. A bigger window title "Optimize Drives" should open. Check your Local Disk C in the menu then click on the optimize button. This may take a while if you have a hard drive. Do this for all of your drives if you have more than one.</p>
+
+	<h1>Conclusion</h1>
+
+	<p>Over the whole optimization guide we cleaned our system with CCleaner. We updated all of the drivers on our system with Driver Booster. We installed minimal NVidia drivers with NVCleanStall. We optimized our NVidia control panel. We set our RAM to XMP if you had it available in the BIOS. We debloated our windows and got rid of all the preinstalled junk. We gutted the startup applications. We enabled a Ultimate Performance power plan. And finally, we optimized our drives on our systems. Note, this will benefit lower end machines far more than higher end machines. You still should see a sizable performance difference either way.</p>
+
+</body>
+</html>

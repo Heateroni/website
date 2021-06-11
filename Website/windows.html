@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Windows</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<pre class="headerwin">
+ ________ __           __                       
+|  |  |  |__|.-----.--|  |.-----.--.--.--.-----.
+|  |  |  |  ||     |  _  ||  _  |  |  |  |__ --|
+|________|__||__|__|_____||_____|________|_____|   
+
+	</pre>
+
+	<div class="navbar">
+		<ul>
+			<li class="navbarlist"><a href="index.html">Home</a></li>
+		</ul>
+	</div>
+
+	<h1>Windows</h1>
+
+	<p>Windows is by far the most known operating system when it comes to computers. It started out as an application for ms-dos and turned into a full blown operating system that hosts 85% of the internets users to date. This is for a reason. It has the most compatibility with applications out of any operating system. It has by far the best performance. It's a very easy operating system to use and learn. But it has its downsides. Windows 10 is a bloated operating system and is very slow on older machines. This is where it shoots itself in the foot by adding all these default applications to the system that no one ever uses and it just bogs down the system. If you do run Windows on an older operating system, I strongly suggest making a custom Windows ISO and stripping out the stuff you're not going to be using. If you can get your hands on a Windows 10 LTSC ISO this is perferred. It is the best version on Windows 10 and has no extra installed applications on the side. Its just Windows in all its glory.
+	</p>
+
+	<h1>Creating Your Own ISO</h1>
+
+	<p>
+		We're going to need an application before we debloat our Windows ISO. We need a program called <a href="https://m.majorgeeks.com/files/details/win_toolkit.html" target="_blank">WinToolKit</a>. Second we're going to need a Windows 10 ISO. Once you have both of these we can proceed. For this next part you're going to need 7zip. You need to extract your Windows 10 ISO into a folder. Once you've done this launch the WinToolKit application. Go to the advanced tab. Then click on the Component Removal feature. Click the Browse button and go to the folder where you extracted Windows 10. Go into the sources folder. Then select the install.wim file and then click ok. A number of Windows versions are going to pop up. You can delete the ones you don't need and keep the Windows version you do. I prefer Windows 10 Professional so I'll keep Professional and delete all of the others. Once you've done this, in the bottom left there should be a select button once you've clicked on the version you want. Click the select button and let the application load. Once it has loaded you'll see a bunch of packages highlighted in green, white, and red. Don't remove anything in red or white as these are unknown and can break the system. These are separated into catagories. Don't remove anything in accessories or multimedia. Remove everything in networking. Under the Internet Information Services remove everything except Internet Information Services package itself. Remove everything in Mobile PC and Printing. Don't remove anything in printing if you're going to be printing from this PC. Under the system category. Select everything except HTML Engine and Microsoft .NET Framwork 3.5.1. If you want to keep Cortana make sure to unselect it. Do the same if you want to keep Windows 10 search. I remove both of these and I replace the start button with a program called <a href="https://github.com/Open-Shell/Open-Shell-Menu" target="_blank">Open Shell</a>. Moving on, remove everything from the following categories, Virtual PC, Misc, and Windows Apps. Once you've selected all of these. Click the button in the top left saying remove components. Let this process run, it can take a while. Once the process is finished close the program out. Click save & rebuild and let the program do its thing. Once this is completed. Go back to the basic page in the application and click on the ISO Maker. For the top folder input navigate to where you extracted to Windows 10 ISO to. The second browse button is where you want the ISO to be saved afterwards. Once you have these filled out. Click the create ISO button. Then flash this to a USB stick and install Windows normally and enjoy your debloated copy of Windows 10.
+	</p>
+
+	<h1>Debloating Windows 10</h1>
+
+	<p>
+		We're going to need a script to debloat our installed copy of Windows 10. We're going to use the Windows 10 Debloater script created by <a href="https://github.com/Sycnex/" target="_blank">Sycnex</a>. The script can be found <a href="https://github.com/Sycnex/Windows10Debloater#windows10debloater" target="_blank">here</a>. Click the green code button and download as zip. You're going to extract the file and copy the location. We're going to CD into this later in PowerShell. Open a PowerShell window as administrator. Type in the following. "Set-ExecutionPolicy Unrestricted". Enter this syntax and type Y for yes once it prompts you to do so. Now we're going to CD into the folder we extracted earlier. This should look something like this in PowerShell "cd C:\Users\Your-Username\Downloads\Windows10Debloater-master". This will take you into the directory in PowerShell. Now type in the following to launch the script "./Windows10DebloaterGUI.ps1". A window should pop up. Click the debloat button at the top and let the script run. Once this has completed you should have a lighter faster install of Windows 10 on your PC.
+	</p>
+
+	<h1>Conclusion</h1>
+
+	<p>After debloating is all said and done, Windows 10 is my choice for what I run on my system. The gaming experience is too good right now to not use in my opinion. The easy to use interface that I've known for my whole life is very comfortable to use in my opinion. Your milage may very on your background. But in my opinion Windows 10 is the true, best middle ground when it comes to operating systems. The best gaming performance, security is okay if you know what you're doing, stability is another thing that may very for people. I have a super light install so my Windows is very stable but I know others who have performance and crashing issues. Gaming is just the best on Windows compared to the other operating system I've talked about. All in all, in the end. This is my go to. In the future I hope to see Windows go back to a Windows 7 type of operating system with functionality at the front instead of this touch screen crap and all this pre-installed bloatware on the system.</p>
+
+</body>
+</html>

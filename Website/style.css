@@ -1,0 +1,47 @@
+body {
+	font-family: "Roboto Mono";
+	margin: 0% 25% 0% 25%;
+	background-color: #252930;
+	font-family: 'Bebas Neue', cursive;
+	color: white;
+}
+
+a {
+
+	color: #f56042;
+}
+
+a:hover {
+	color: grey;
+}
+
+.header {
+	color: #f29e29;
+	font-size: 18px;
+}
+
+h1 {
+	color: #f56042;
+}
+
+p {
+	font-size: 22px;
+}
+
+.content {
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+.headerwin {
+	color: #f29e29;
+}
+
+.navbar {
+	float: right;
+	list-style: none;
+	padding-right: 30px;
+}
+
+.navbarlist {
+	display: inline;
+}
